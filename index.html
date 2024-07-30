@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+    <link href="./stylesheet.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Beginner's Guide:
+        <br>
+    Creating a Form with HTML</h1>
+    <p>You've probably seen a form before: If you've clicked a button to submit something, it was probably some kind of form! I've gone ahead and created an example form below, feel free to fill it out!</p>
+    
+    <!---Begin Form--->
+    <form action="https://docs.google.com/spreadsheets/d/1o4T5-z3XQJZHcSC8hMmTsCHvs_84K9XmUtysOZpjGWg/edit?usp=sharing" method="POST">
+        <h2>The Form About Forms!</h2>
+        <label for="name">What is your name?</label><br><br>
+            <input type="text" id="name" name="name"><br><br>
+
+        <label for="age">How old are you?</label><br><br>
+            <input type="number" id="age" name="age"><br><br>
+
+        <label for="location">Where are you from?</label><br><br>
+            <input type="text" id="location" name="location"><br><br>
+
+        <label for="description">Describe how familiar you are with forms currently:</label><br><br>
+            <textarea id="description" name="description" rows="10" cols="50"></textarea><br><br>
+        <input type="submit" class="submit" value="Submit Form!">
+    </form>
+    <!---End Form--->
+
+    <p>Let's go through how to add a form to your HTML document. You can read the step-by-step guide all the way through or click the links below to jump to the relevant section.</p>
+    <ol class="leftside-list">
+        <li><a href="#basic-elements">Basic Elements</a></li>
+        <li><a href="#how-to-inputs">Types of Inputs and How to Use Them</a></li>
+        <li><a href="#form-validations">Form Validations</a></li>
+        <li><a href="#finished-product">The Finished Product</a></li>
+    </ol>
+    <h3 id="basic-elements">1. Basic Elements</h3>
+    <p>View the table I have created below to see the elements names, how they appear in code, and what they do/mean!</p>
+    <div class="table1">
+    <table>
+        <thead>
+            <tr>
+                <th>Element/Attribute</th>
+                <th>Code</th>
+                <th>Purpose/Meaning</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Form</td>
+                <td>&lt;form&gt;</td>
+                <td>This element signifies the beginning of a form and contains all of its child elements until it is closed with &lt;/form&gt;</td>
+            </tr>
+            <tr>
+                <td>Action</td>
+                <td>action="./link"</td>
+                <td>This attribute is set to the value of the link (either external or relative path) where submissions should go.</td>
+            </tr>
+            <tr>
+                <td>Method</td>
+                <td>method="POST"</td>
+                <td>This attribute is set to the value of the https method we want to use. This will usually be POST.</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <br>
+    <h3 id="how-to-inputs">2. Types of Inputs and How to Use Them</h3>
+    <p>So much different information can be collected with a form, and to make it as user-friendly as possible we want to supply our users with the most logical "input" field to enter information into. Take a look at the table below to see the input types, how they appear in code, and what they do/mean.</p>
+    <div class="table2">
+      <table> 
+        <thead> 
+        <tr> 
+              <th>Element</th> 
+              <th>Code</th> 
+              <th>Purpose/Meaning</th> 
+        </tr> 
+        </thead> 
+        <tbody> 
+        <tr> 
+               <td>Input</td>
+               <td>&lt;input&gt;</td> 
+               <td>Renders a box for user input. Needs to have For= attribute assigned to it with a value that matches the Label to associate them.</td> 
+        </tr>
+        <tr> 
+               <td>Label</td> 
+               <td>&lt;label&gt;</td> 
+               <td>Label renders the text to accompany the input box. Must share the same for="value" as input element. Text is written directly between opening and closing tags.</td> 
+        </tr>
+        <tr> 
+            <td>Text</td> 
+            <td>&lt;input type="text"&gt;</td> 
+            <td>Renders a text field that can be typed into.</td>
+         </tr> 
+         <tr> 
+           <td>Number</td> 
+           <td>&lt;input type="number"&gt;</td> 
+           <td>Renders a text box that will ONLY accept numbers.</td>
+        </tr> 
+         <tr> 
+           <td>Password</td> 
+           <td>&lt;input type="password"&gt;</td> 
+           <td>Automatically masks inputs as dots or astericks.</td>
+         </tr>
+         <tr> 
+           <td>Submit</td> 
+           <td>&lt;input type="submit" value="Submit"&gt;</td> 
+           <td>Renders the submit button, text will render as whatever text the value is set to.</td> 
+        </tr> 
+        </tbody> 
+        </table>
+        </div>
+        <br>
+    <h3 id="form-validations">3. Form Validations</h3>
+    <p>Speaking of user-friendly, we want to make sure our users don't make any obvious mistakes when they input information into our forms! Let's look at validation for that (think of it as adding parameters to your input fields)!</p>
+    <p>Let's look at different parameters we can set:</p>
+    <ul>
+        <br>
+        <li>Make a Field Required: add a <em>required</em> attribute to an input element.</li>
+        <li>Set a Minimum/Maximum: when an input element has a type="number" attribute, we can add additional min="#" and/or max="#" attributes.</li>
+        <li>Set Text Length Requirements: we can add additonal minlength="#" and/or maxlength="#" attributes to text inputs that set minimum/maximum # of characters that can be entered.</li>
+        <br>
+    </ul>
+    <h3 id="finished-product">4. The Finished Product</h3>
+    <p>To view the form in its entirety that I have created at the top of this page, <strong class="highlight-text">right-click</strong> anywhere on your screen and select <strong class="highlight-text">"inspect"</strong> from the dropdown menu. The HTML will show up on the left of your screen and you can click on the form element to see the expanded code behind it. Feel free to snoop around at the rest of the code too if you're curious!</p>
+    <br>
+    <footer>
+        <p>Project Started: July 22nd, 2024</p>
+        <p>Project Initally Completed: July 23rd, 2024<p>
+        <p>Created By: Alex Doyle</pp>
+        <br>
+    </footer>
+</body>
+</html>

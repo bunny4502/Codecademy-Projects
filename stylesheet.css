@@ -1,0 +1,102 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #02353C;
+    margin: 15px;
+}
+
+h1 {
+    color: #C1F6ED;
+    background-image: url('https://as2.ftcdn.net/v2/jpg/01/93/57/57/1000_F_193575723_G4tgK3HKUI5zceKL29xOd8pFuP21KV3R.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px dotted #3fd0c3;
+}
+
+p {
+    color: #C1F6ED;
+}
+
+form {
+    color:#3fd0c3;
+    background-color: #02353C;
+    text-align: center;
+
+}
+
+.submit {
+    color: #C1F6ED;
+    background-color: #3fd0c3;
+    font-size: 20px;
+}
+
+ol {
+    text-align: left;
+    line-height: 2em;
+}
+
+ol li::marker {
+    color:#f6a192;
+    font-weight: bold;
+}
+
+a {
+    color: #f6a192;
+    font-weight: bold;
+}
+
+a:hover {
+    text-align: left;
+    color: #f6c492;
+    font-weight: bold;
+}
+
+a:active {
+    text-align: left;
+    color: #f6d992;
+    font-weight: bold;
+}
+
+h3 {
+    color: #f6a192;
+    text-align: left;
+    font-size: larger;
+}
+
+
+table {
+    border: 3px solid #f6d992;
+    text-align: center;
+    margin: 0 auto;
+}
+
+th {
+   color: #3fd0c3;
+   font-weight: bold; 
+   font-size: 20px;
+   border: 2px solid #f6a192;
+}
+
+td {
+    color:#3fd0c3;
+    border: 2px solid #f6a192;
+}
+
+ul {
+    text-align: left;
+    color:#C1F6ED;
+    border: 2px dotted #3fd0c3;
+    padding: 10x;
+}
+
+.highlight-text {
+    color: #C1F6ED;
+    text-decoration: underline;
+}
+
+footer {
+    border: 1px dotted #3fd0c3;
+    font-style: italic; 
+}
